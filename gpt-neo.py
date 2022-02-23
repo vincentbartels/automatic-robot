@@ -9,40 +9,40 @@ class Model(Enum):
     GPT_2 = 'gpt2'
 
 
-# following Heikus by Matsuo Basho & Yosa Buson
+# following Haikus by Matsuo Basho & Yosa Buson
 
 def one_shot():
     return """
-Heiku:
+Haiku:
 In the moonlight,
 The color and scent of the wisteria
 Seems far away.
 
-Heiku:
+Haiku:
 
 """
 
 
 def few_shot():
     return """
-Heiku:
+Haiku:
 In the twilight rain
 these brilliant-hued hibiscus -
 A lovely sunset.
 
-Heiku:
+Haiku:
 A summer river being crossed
 how pleasing
 with sandals in my hands!
 
-Heiku:
+Haiku:
 
 """
 
 
 def zero_shot_with_topics():
     return "Write an english Haiku based on the following topics:\n" \
-           "Tpoics:\n" \
+           "Topics:\n" \
            "- Summer\n" \
            "- Beach\n" \
            "Haiku:"
